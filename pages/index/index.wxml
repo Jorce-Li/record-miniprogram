@@ -1,0 +1,47 @@
+<!--index.wxml-->
+<view class="container">
+  <image class="background" mode="widthFix" src="./bg@2x.png"/>
+  <view class="imageCard">
+    <view class="imageCard-content">
+      <view class="imageCard-title">Boston diagnostic aphasia examination</view>
+      <view class="imageCard-subTitle">Tell me everything you see in this picture is happening</view>
+      <image class="imageCard-image" mode="widthFix" src="./Boston@2x.png"></image>
+    </view>
+  </view>
+  <view class="record-container">
+    <image class="record-icon" mode="widthFix" src="./Recording_icon.svg" />
+    <view class="record-text">
+      Recording
+    </view>
+  </view>
+  <view class="text-title">Text</view>
+  <view class="text-card">
+    <view class="text-card-content">
+      Although the Cookie Theft picture is widely 
+      usedto assess language in the stroke popula, 
+      there are some intrinsic problems with the 
+      picture. It is outdated in appearance, with a 
+      woman wearing a dress and apron while 
+      washing the dishes. When asked to describe the
+      picture, individuals frequently make comments
+    </view>
+  </view>
+  <view class="text-linear"></view>
+  <view class="result-title">Result</view>
+  <view class="result-card">
+    <view class="result-content">
+      <view class="result-card-title">Mild Cognitiive Impairment</view>
+      <view class="result-card-progress">
+        <view class="result-card-progressing"></view>
+      </view>
+      <view class="result-card-info">
+        <view class="result-card-info-1">CTRL</view>
+        <view class="result-card-info-2">50%</view>
+        <view class="result-card-info-3">AD</view>
+      </view>
+    </view>
+  </view>
+  <view class="next-btn" bind:tap="goDetail">
+    Check the detail information
+  </view>
+</view>

@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="container">
+  <image class="background" src="./background.jpg"/>
+  <view class="next-container" bind:tap="goNext">
+    <view class="next-content">
+      <image mode="widthFix" src="./go.svg" class="next-icon" />
+    </view>
+  </view>
+  <view class="title">AD Prediction</view>
+  <view class="about">About AD</view>
+</view>

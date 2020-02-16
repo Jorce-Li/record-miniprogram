@@ -1,0 +1,41 @@
+<!--index.wxml-->
+<view class="container">
+  <image class="background" src="./bg@2x.png"/>
+  <image class="goBack" bind:tap="goBack" mode="widthFix" src="./back_icon.svg"></image>
+  <view class="title">Algorithm Comparison</view>
+  <view class="cards">
+    <view class="card-item">
+      <view class="card-item-content">
+        <view class="card-item-title">
+        <image class="card-item-icon" src="./cross-validation score_icon.svg" mode="widthFix">
+        </image>
+        <view class="card-item-text">cross-validation score</view>
+        </view>
+        <view class="card-item-score">0.754</view>
+      </view>
+    </view>
+    <view class="card-item">
+      <view class="card-item-content">
+        <view class="card-item-title">
+        <image class="card-item-icon" src="./test set score_icon.svg" mode="widthFix">
+        </image>
+        <view class="card-item-text">test set score</view>
+        </view>
+        <view class="card-item-score">0.754</view>
+      </view>
+    </view>
+  </view>
+  <view class="algorithm-title">Algorithm</view>
+  <view class="algorithm-card">
+    <view class="algorithm-card-content">
+      <view class="algorithm-card-item" wx:for="{{data}}" wx:for-item="item">
+        <image class="algorithm-card-icon" mode="widthFix" src="{{item.src}}"/>
+        <view class="algorithm-text">{{item.text}}</view>
+        <view class="algorithm-progress">
+          <view class="algorithm-progressing" style="width: {{item.score}}"></view>
+        </view>
+        <view class="algorithm-score">{{item.score}}</view>
+      </view>
+    </view>
+  </view>
+</view>
